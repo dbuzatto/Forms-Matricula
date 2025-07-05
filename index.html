@@ -140,11 +140,15 @@
 
                 <div class="input-wrapper flex-1">
                   <label for="state">Estado</label>
-                  <input type="text" id="state" name="state" disabled value="SP"/>
+                  <input
+                    type="text"
+                    id="state"
+                    name="state"
+                    disabled
+                    value="SP"
+                  />
                 </div>
               </div>
-
-              
             </fieldset>
 
             <fieldset class="guardian">
@@ -158,7 +162,9 @@
                   name="guardian"
                   placeholder="Nome completo do responsável"
                 />
-                <small>Principal responsável legal e contato de emergência</small>
+                <small
+                  >Principal responsável legal e contato de emergência</small
+                >
               </div>
 
               <div class="input-wrapper">
@@ -181,13 +187,53 @@
                   placeholder="E-mail do responsável"
                 />
                 <div class="error">
-                  <img src="assets/icons/alert-circle.svg" alt="Ícone de alerta" />
+                  <img
+                    src="assets/icons/alert-circle.svg"
+                    alt="Ícone de alerta"
+                  />
                   <span>Insira um e-mail válido</span>
                 </div>
               </div>
-
             </fieldset>
 
+            <fieldset class="enroll-options">
+              <legend>Opções de matrícula</legend>
+
+              <div class="input-wrapper">
+                <label>Selecione o turno de estudo</label>
+                <div class="radio-wrapper">
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input
+                      type="radio"
+                      name="study-shift"
+                      id="morning"
+                      value="morning"
+                    />
+                    <img
+                      src="assets/icons/sun-cloud-02.svg"
+                      alt="Ícone de sol com nuvens"
+                    />
+                    <label for="morning">Manhã</label>
+                  </div>
+
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input
+                      type="radio"
+                      name="study-shift"
+                      id="evening"
+                      value="evening"
+                    />
+                    <img
+                      src="assets/icons/sun-02.svg "
+                      alt="Ícone de sol"
+                    />
+                    <label for="evening">Tarde</label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
           </form>
         </div>
       </main>
